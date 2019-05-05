@@ -1,64 +1,11 @@
+<nav class="navbar fixed-top navbar-inverse">
+		<a class="navbar-brand" href="#"> </a>
+		<button type="button" class="btn btn-success"> <a href="" class="btn btn-default btn-rounded mb-4"
+				data-toggle="modal" data-target="#modalRegisterForm">
+				Sign up/Sign in</a></button>
+	</nav>
 
-
- {{> burgers/burger-block devour=true}}
-
-	<div class="container-fluid">
-		<div class="row content">
-			<div class="col-sm-3 sidenav">
-				<h4>Past posts</h4>
-				 
-				<div class="input-group">
-					<!-- <input type="text" class="form-control" placeholder="Search Blog..">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button"> -->
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
-				</div>
-			</div>
-
-
-
-			<!-- <div class="col-sm-9"> -->
-
-				<div class="jumbotron">
-					<div class="author-container">
-						<h3>Create a Post</h3>
-						<table class="table table-striped">
-							<thead>
-								<!-- <tr>
-									<th>Name</th>
-									<th># of Posts</th>
-									<th>See Author's Posts</th>
-									<th>New Post</th>
-									<th>Delete Author</th>
-								</tr> -->
-							</thead>
-							<tbody>
-								<tr id="form-row">
-									<form id="author-form">
-										<td colspan="4">
-											<input placeholder="Tell us a story" id="author-name" type="text" />
-										</td>
-										<td><button type="submit" class="btn btn-success">Submit Post</button>
-										</td>
-									</form>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-		</d>
-
-	</div>
-	</div>
-	</div>
-
-
-
-
+    {{!-- the sign up and sign in are being handled by a modal so i will include all of the --}}
 	<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog" role="document">
@@ -94,8 +41,3 @@
 			</div>
 		</div>
 	</div>
-    	 <footer class="fixed-bottom">
-		<p>Project 2</p>
-	  <a href="https://github.com/cpaul319/Project_2_Confessions">Github Repo
-		 </a> 
-	</footer>
