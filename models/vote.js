@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Vote = sequelize.define("Vote", {
     // Giving the Author model a name of type STRING
-    Like: {
+    trueConfession: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: true
