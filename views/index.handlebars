@@ -1,49 +1,50 @@
 
 <div id="heading">
-<h1>Eat Da Burger!</h1>
+<h1> </h1>
 </div>
   <div class="grid-container">
-      
-                {{!-- <div class="jumbotron"> --}}
-<div class="burger">
-<h2>List of Burgers</h2>
+ <div class="container">
+		<div class="row mt-4">
+      <div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/blog">Go to Blog</a>
+      </div>
+			<div class="col-md-2 col-sm-2">
+        <a class="btn btn-light" href="/cms">New Post</a>
+      </div>
+    </div>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<div class="author-container">
+					<h1>Authors</h1>
+					<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th># of Posts</th>
+								<th>See Author's Posts</th>
+								<th>New Post</th>
+								<th>Delete Author</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="form-row">
+								<form id="author-form">
+									<td colspan="4">
+										<input placeholder="Enter a name" id="author-name" type="text" />
+									</td>
+									<td><button type="submit" class="btn btn-success">Create Author</button>
+									</td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		</d>
+		<!-- Custom Script -->
+		<script src="js/author.js" type="text/javascript"></script>
 
-<ol>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ol>
-</div>
-<div class="devouredBurger">
-<h2>Burgers that were eaten</h2>
- 
-<ol>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ol>
-</div>
-                </div>
-  </div>
-  <div class="grid-container">
-
-<form class="create-form" >
-
-  <div class="form-group" id="item1">
-    <label for="burger"><h2>Add a Burger</h2></label>
-    <input type="text" id="burger" name="name">
-  </div>
-
-   <input type="radio" name="devoured" style="opacity: 0" value="0" checked><br>
-  
-
-
-  <button type="submit">Submit</button>
-</form>
  </div>   
 
 
