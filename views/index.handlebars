@@ -1,14 +1,14 @@
 {{!-- not sure if i need a folder or if partials will work --}}
 {{!-- initate this with button click possible boolean needed --}}
 <div class="nav">
-   {{> partials/signUp button=true}}
+   {{> posts/signUp button=true}}
 </div>
 
 
 	<div class="container-fluid">
 		<div class="row content">
 			<div class="col-sm-3 sidenav">
-			  {{> partials/postContent}}
+			  {{> posts/sideNav}}
 			</div>
 
 
@@ -17,31 +17,8 @@
 
 				<div class="jumbotron">
 					<div class="author-container">
-						<h3>Create a Post</h3>
-						<table class="table table-striped">
-							<thead>
-								<!-- <tr>
-									<th>Name</th>
-									<th># of Posts</th>
-									<th>See Author's Posts</th>
-									<th>New Post</th>
-									<th>Delete Author</th>
-								</tr> -->
-							</thead>
-							<tbody>
-								<tr id="form-row">
-									<form id="author-form">
-										<td colspan="4">
-											<input placeholder="Tell us a story" id="author-name" type="text" />
-										</td>
-										<td><button type="submit" class="btn btn-success">Submit Post</button>
-										</td>
-									</form>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
+					{{> posts/mainContent}}	
+					</div> 
 			</div>
 		</div>
 		</d>
