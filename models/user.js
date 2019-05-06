@@ -1,9 +1,9 @@
 // creates the user table
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
-    FirstName: DataTypes.STRING,
-    LastName: DataTypes.STRING,
-    Email: {
+    firstname: DataTypes.STRING,
+    lastname: DataTypes.STRING,
+    email: {
       type: DataTypes.STRING,
       unique: true,
       allowNull: false,
@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
         isEmail: true
       }
     },
-    Password: {
+    password: {
       type: DataTypes.STRING,
       allowNull: false
     }
