@@ -1,8 +1,15 @@
-	<h4>Past Posts</h4>
-				 
-				<div class="input-group">
-				 
-							<span class="glyphicon glyphicon-search"></span>
-						</button>
-					</span>
-				</div>
+<h4>Past Posts</h4>
+{{#if user}}
+<h1>{{firstName}} {{lastName}}</h1>
+<ul class="pastPosts">
+  {{#each user}}
+    <li>{{this.confession}}</li>
+  {{/each}}
+</ul>
+{{else}}
+<h3>Not Logged in</h3>
+<img src="https://pbs.twimg.com/profile_images/814550355522580481/X4ezsPZP.jpg" alt="True False">
+{{/if}}
+
+ 
+ 
