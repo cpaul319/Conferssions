@@ -1,5 +1,5 @@
 var Q = require("q");
-var Idea = require("../model.js");
+var db = require("../model.js");
 
 module.exports = {
   truevote: function(req, res, next) {
@@ -11,7 +11,7 @@ module.exports = {
 };
   
 var updateVoteCount = function(req, res, changeValue) {
-var updateVotes = Q.nbind(Idea.findOneAndUpdate, Idea);
+var updateVotes = Q.nbind(db.findOneAndUpdate, db);
 var query = { title: req.body.title };
     
   updateVotes(query, { $inc: { votes: changeValue } })
