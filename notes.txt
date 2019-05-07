@@ -3,3 +3,11 @@ https://www.uckg.org/wp-content/uploads/2018/02/True-False.jpg
 https://memegene.net/sites/default/files/wallpaper/true-clipart/102857/true-clipart-true-false-102857-8611552.png
 
 https://pbs.twimg.com/profile_images/814550355522580481/X4ezsPZP.jpg
+
+  "development": {
+    "username": "osxa3j4iv153o8xx",
+    "password": "ccg6nfkd81f43fqk",
+    "database": "lkfsm7pm8baitr0j",
+    "host": "uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
