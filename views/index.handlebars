@@ -1,34 +1,36 @@
 {{!-- not sure if i need a folder or if partials will work --}}
 {{!-- initate this with button click possible boolean needed --}}
 {{!-- still getting a hang of handlebars, i think i need an if statement for these --}}
-<div class="nav">
+<div class="container-main">
+	<div class="nav">
 
-	{{{> posts/signUp placeholder=true}}}
+		{{> posts/signUp placeholder=true}}
 
-</div>
+	</div>
 
-<div class="container-fluid">
-	<div class="row content">
-		
+	<div class="container-fluid">
+		<div class="row content">
+
 
 			{{> posts/sideNav}}
 
-	
 
-		<div class="jumbotron">
+
+
 			<div class="post-container">
 
 				{{> posts/mainContent}}
 
 			</div>
-		</div>
-	</div>
-	</d>
 
+		</div>
+		</d>
+
+	</div>
+
+	<footer class="fixed-bottom">
+		<p>Project 2</p>
+		<a href="https://github.com/cpaul319/Project_2_Confessions">Github Repo
+		</a>
+	</footer>
 </div>
- 
-<footer class="fixed-bottom">
-	<p>Project 2</p>
-	<a href="https://github.com/cpaul319/Project_2_Confessions">Github Repo
-	</a>
-</footer>
