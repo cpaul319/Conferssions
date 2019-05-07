@@ -1,15 +1,24 @@
-<h3>Create a Post</h3>
 <table class="table table-striped">
     <tbody>
         <tr id="form-row">
             <form id="author-form">
-                <td colspan="4">
-                    <input placeholder="Tell us a story" id="author-name" type="text" />
-                </td>
+                <div class="col-sm-3 sidenav">
+                    {{#if loginStatus}}
+                    <h3>Current Post</h3>
+                    <h3>{{firstName}} {{lastName}}</h3>
+                    <ul class="pastPosts">
+                        {{#each user}}
+                        <li>{{this.confession}}</li>
+                        {{/each}}
+                    </ul>
+                    {{else}}
+                    <h3>Not Logged in</h3>
+                    <img src="https://pbs.twimg.com/profile_images/814550355522580481/X4ezsPZP.jpg" alt="True False">
+                    {{/if}}
+                </div>
                 <td><button type="submit" class="btn btn-success">Submit Post</button>
                 </td>
             </form>
         </tr>
     </tbody>
 </table>
- 
