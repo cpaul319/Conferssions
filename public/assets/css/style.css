@@ -79,12 +79,13 @@ body {
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
+    box-shadow: 5px 10px 18px black;
   }
   .item2 { 
     background-color: rgba(254, 253, 255, 0.3);
     
     text-align: center;
-  
+    box-shadow: 5px 10px 18px black;
     padding: 50px 0;
     font-size: 30px; 
   }
