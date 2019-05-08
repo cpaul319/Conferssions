@@ -13,6 +13,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css">
 	<link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
 	<title>True||False</title>
 	<script src="https://code.jquery.com/jquery.js"></script>
@@ -20,14 +21,14 @@
 </head>
 
 <body>
-	<nav class="navbar fixed-top navbar-inverse">
+	<nav class="navbar sticky navbar-inverse">
 		<a class="navbar-brand" href="#"> </a>
+		<h1>Confessions</h1>
 		<div><a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal"
 				data-target="#modalLRForm">LogIn/Register</a> </div>
 	</nav>
 
-
-
+	<br>
 	<!--Modal: Login / Register Form-->
 	<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 		aria-hidden="true">
@@ -143,72 +144,21 @@
 			<!--/.Content-->
 		</div>
 	</div>
+
 	<!--Modal: Login / Register Form-->
-
-
-
-	<div class="container-fluid">
-		<div class="row content">
-			<div class="col-sm-3 sidenav">
-				<h4>Past posts</h4>
-
-				<div class="input-group">
-					<!-- <input type="text" class="form-control" placeholder="Search Blog..">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button"> -->
-					<span class="glyphicon glyphicon-search"></span>
-					</button>
-					</span>
-				</div>
-			</div>
-
-
-
-			<!-- <div class="col-sm-9"> -->
-
-			<div class="jumbotron">
-				<div class="author-container">
-					<h3>Create a Post</h3>
-					<table class="table table-striped">
-						<thead>
-							<!-- <tr>
-									<th>Name</th>
-									<th># of Posts</th>
-									<th>See Author's Posts</th>
-									<th>New Post</th>
-									<th>Delete Author</th>
-								</tr> -->
-						</thead>
-						<tbody>
-							<tr id="form-row">
-								<form id="author-form">
-									<td colspan="4">
-										<input placeholder="Tell us a story" id="author-name" type="text" />
-									</td>
-									<td><button type="submit" class="btn btn-basic">Submit Post</button>
-									</td>
-								</form>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
 	</div>
-	</d>
+	<div class="grid-container">
+		<div class="item1">Previous Post: Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci vel
+			recusandae possimus deleniti aperiam culpa minima molestiae dolore sint, magnam molestias sapiente est
+			officia necessitatibus odit maxime expedita labore amet reprehenderit rerum libero repudiandae ea totam!
+			Vitae, hic eveniet in architecto voluptatem perferendis dignissimos eos sed deserunt iste quis?</div>
+		<div class="item2">Button Confess</div>
+		<div class="item3">True False</div>
 
 	</div>
-	</div>
-	</div>
-
-
-
-
-
-
 
 </body>
-<footer class="fixed-bottom">
+<footer>
 	<p>Project 2</p>
 	<a href="https://github.com/cpaul319/Project_2_Confessions">Github Repo
 	</a>
