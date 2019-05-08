@@ -11,3 +11,5 @@ https://pbs.twimg.com/profile_images/814550355522580481/X4ezsPZP.jpg
     "host": "uoa25ublaow4obx5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
+  
+  https://media.giphy.com/media/m6tmCnGCNvTby/giphy.gif
