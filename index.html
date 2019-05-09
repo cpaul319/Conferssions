@@ -17,13 +17,16 @@
 	<link rel="stylesheet" href="public/assets/css/style.css" type="text/css" />
 	<title>True||False</title>
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- AnimateCSS CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+	
 	<!-- <script src="/assets/js/.js"></script> -->
 </head>
 
 <body>
 	<nav class="navbar sticky navbar-inverse">
 		<a class="navbar-brand" href="#"> </a>
-		<h1>Confessions</h1>
+		<h1 class="animated bounceIn">Confessions</h1>
 		<div><a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal"
 				data-target="#modalLRForm">LogIn/Register</a> </div>
 	</nav>
@@ -32,7 +35,7 @@
 	<!--Modal: Login / Register Form-->
 
 	<!--Modal: Login / Register Form-->
-	<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	<div class="modal animated rollIn slow" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog cascading-modal" role="document">
 			<!--Content-->
@@ -162,7 +165,7 @@
 	</div>
 
 	<!-- Modal with form for posts -->
-	<div class="modal" id="modalPostForm" tabindex="-1" role="dialog">
+	<div class="modal animated fadeInDown slower" id="modalPostForm" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -204,11 +207,12 @@
 				<div class="card-title">Date Of Post</div>
 				<hr>
 				<div class="card-body">
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci vel
-				Vitae, hic eveniet in architecto voluptatem perferendis dignissimos eos sed deserunt iste quis?</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci vel
+						Vitae, hic eveniet in architecto voluptatem perferendis dignissimos eos sed deserunt iste quis?
+					</p>
+				</div>
+			</div>
 		</div>
-	</div>
-	</div>
 		<div class="item2">
 
 			<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalPostForm">
@@ -225,8 +229,8 @@
 					Here Can go the body of the card
 				</div>
 				<div class="card-footer">
-						<button type="button" class="btn btn-primary">True</button> ||
-					<button type="button" class= "btn btn-danger"><a href="" >False</a> </button> 
+					<button type="button" class="btn btn-primary">True</button> ||
+					<button type="button" class="btn btn-danger"><a href="">False</a> </button>
 				</div>
 			</div>
 		</div>
@@ -235,9 +239,9 @@
 
 </body>
 <footer class="sticky">
-	<p>Project 2</p>
 	<a href="https://github.com/cpaul319/Project_2_Confessions">Github Repo
 	</a>
+		<p>CP NRR FR FC</p>
 </footer>
 
 </html>
