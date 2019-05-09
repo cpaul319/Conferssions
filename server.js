@@ -1,7 +1,6 @@
 require("dotenv").config();
 var express = require("express");
 var exphbs = require("express-handlebars");
-// var session = require("express-session");
 var passport = require("passport");
 var db = require("./models");
 var app = express();
@@ -25,7 +24,7 @@ app.set("view engine", "handlebars");
 
 // Routes
 // require("./routes/api-Routes")(app);
-// require("./routes/html-Routes")(app);
+require("./routes/html-Routes")(app);
 require("./routes/confession-api-routes")(app);
 require("./routes/user-api-routes")(app);
 require("./routes/vote-api-routes")(app);
