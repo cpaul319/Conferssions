@@ -99,20 +99,20 @@
 
 							<!--Body-->
 							<div class="modal-body">
-									<div class="md-form form-sm mb-5">
-											<i class="fas fa-envelope prefix"></i>
-											<input type="FirstName" id="modalLRInput8"
-												class="form-control form-control-sm validate">
-											<label data-error="wrong" data-success="right" for="modalLRInput8">Your
-												First Name</label>
-										</div>
-										<div class="md-form form-sm mb-5">
-												<i class="fas fa-envelope prefix"></i>
-												<input type="LastName" id="modalLRInput9"
-													class="form-control form-control-sm validate">
-												<label data-error="wrong" data-success="right" for="modalLRInput9">Your
-													Last Name</label>
-											</div>
+								<div class="md-form form-sm mb-5">
+									<i class="fas fa-envelope prefix"></i>
+									<input type="FirstName" id="modalLRInput8"
+										class="form-control form-control-sm validate">
+									<label data-error="wrong" data-success="right" for="modalLRInput8">Your
+										First Name</label>
+								</div>
+								<div class="md-form form-sm mb-5">
+									<i class="fas fa-envelope prefix"></i>
+									<input type="LastName" id="modalLRInput9"
+										class="form-control form-control-sm validate">
+									<label data-error="wrong" data-success="right" for="modalLRInput9">Your
+										Last Name</label>
+								</div>
 								<div class="md-form form-sm mb-5">
 									<i class="fas fa-envelope prefix"></i>
 									<input type="email" id="modalLRInput12"
@@ -160,50 +160,77 @@
 			<!--/.Content-->
 		</div>
 	</div>
-	
-       <!-- Modal with form for posts -->
-    <div class="modal" id="modalPostForm" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Write a confession. It could be made up or true. Others will try and figure
-                        out if it's real or not.</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <label for="message-text" class="col-form-label">Write your confession here</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    <label class="radio-inline">
-                        <h5>Is this confession true or false?</h5>
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> True
-                    </label>
-                    <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0"> False
-                    </label>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
+	<!-- Modal with form for posts -->
+	<div class="modal" id="modalPostForm" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Write a confession. It could be made up or true. Others will try and figure
+						out if it's real or not.</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<label for="message-text" class="col-form-label">Write your confession here</label>
+						<textarea class="form-control" id="message-text"></textarea>
+					</div>
+					<label class="radio-inline">
+						<h5>Is this confession true or false?</h5>
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> True
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="0"> False
+					</label>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<!--Modal: Login / Register Form-->
 	</div>
 	<div class="grid-container">
-		<div class="item1">Previous Post: Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci vel
-			recusandae possimus deleniti aperiam culpa minima molestiae dolore sint, magnam molestias sapiente est
-			officia necessitatibus odit maxime expedita labore amet reprehenderit rerum libero repudiandae ea totam!
-			Vitae, hic eveniet in architecto voluptatem perferendis dignissimos eos sed deserunt iste quis?</div>
-		<div class="item2"> <a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal"
-                                data-target="#modalPostForm">Click here to confess</a> </div>
-		<div class="item3">True False</div>
+		<div class="item1">
+			<h1>Previous Post:</h1>
+			<hr>
+			<div class="card">
+				<div class="card-title">Date Of Post</div>
+				<hr>
+				<div class="card-body">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque adipisci vel
+				Vitae, hic eveniet in architecto voluptatem perferendis dignissimos eos sed deserunt iste quis?</p>
+		</div>
+	</div>
+	</div>
+		<div class="item2">
+
+			<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalPostForm">
+				<img class="minibox" src="./public/assets/images/confessGot.jpg" alt="GOT Confess Lady">
+				<h3>Click to Confess</h3>
+			</a>
+
+		</div>
+		<div class="item3">
+			<h1>Is It True Or Are They Lying?</h1>
+			<hr>
+			<div class="card">
+				<div class="card-body">
+					Here Can go the body of the card
+				</div>
+				<div class="card-footer">
+						<button type="button" class="btn btn-primary">True</button> ||
+					<button type="button" class= "btn btn-danger"><a href="" >False</a> </button> 
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 </body>
