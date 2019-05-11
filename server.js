@@ -25,9 +25,9 @@ app.set("view engine", "handlebars");
 // Routes
 // require("./routes/api-Routes")(app);
 require("./routes/html-Routes")(app);
-require("./routes/confession-api-routes")(app);
-require("./routes/user-api-routes")(app);
-require("./routes/vote-api-routes")(app);
+// require("./routes/confession-api-routes")(app);
+// require("./routes/user-api-routes")(app);
+// require("./routes/vote-api-routes")(app);
  
 
 var syncOptions = { force: false };

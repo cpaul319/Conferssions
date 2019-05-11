@@ -1,7 +1,7 @@
 const path = require('path');
 const router = require('express').Router();
-const apiConfessionRoute = require('./confession-api-routes');
-const apiUserRoute = require('./user-api-routes');
+// const apiConfessionRoute = require('./confession-api-routes');
+// const apiUserRoute = require('./user-api-routes');
 
 const htmlRoutes = require('./html-routes');
 
@@ -24,9 +24,9 @@ router.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/user-manager.html"));
   });
 
-router.use('/api', apiUserRoute);
-router.use('/api', apiConfessionRoute);
-//router.use('*', htmlRoutes);
+// router.use('/api', apiUserRoute);
+// router.use('/api', apiConfessionRoute);
+// router.use('*', htmlRoutes);
 
 
 module.exports = router;
